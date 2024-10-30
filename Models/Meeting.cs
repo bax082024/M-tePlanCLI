@@ -1,5 +1,5 @@
 using System.Text.Json;
-
+using MøtePlanleggerClI.Models;
 public class Meeting
 {
   public string? Title { get; set; }
@@ -20,7 +20,8 @@ public class Meeting
 
   public void LogMeeting()
   {
+    string sanitizedTitle = string.Join("_", (Title ?? "Untitled").Split(Path.GetInvalidFileNameChars()));
     string log = JsonSerializer.Serialize(this);
-    File.WriteAllText($"Meeting_{Title}_{Time.ToString("yyyyMMddHHmm")}.json", log);
+    File.WriteAllText($"Meeting_{sanitizedTitle}_{Time:yyyyMMddHHmm}.json", log);
   }
 }

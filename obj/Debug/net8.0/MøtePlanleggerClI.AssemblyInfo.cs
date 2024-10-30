@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MøtePlanleggerClI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9414fa67a307b26b8fabb61dd129b48b9a39c358")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c7b67ba82cad82c62f9ff3fb9b640706d23cfcb")]
 [assembly: System.Reflection.AssemblyProductAttribute("MøtePlanleggerClI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MøtePlanleggerClI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

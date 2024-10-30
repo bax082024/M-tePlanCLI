@@ -1,8 +1,13 @@
-public class Persons
-{
-  public string? Name { get; set; }
-  public Persons(string name)
+namespace MøtePlanleggerClI.Models
+{ 
+
+  public class Person
   {
-    Name = name;
+    public string? Name { get; set; }
+    public Person(string name)
+    {
+      Name = name;
+    }
   }
+
 }

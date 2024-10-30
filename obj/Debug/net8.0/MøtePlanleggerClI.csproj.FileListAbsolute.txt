@@ -1,0 +1,15 @@
+C:\HjemmeKode\C-Sharp\C-Sharp\MøtePlanleggerClI\obj\Debug\net8.0\MøtePlanleggerClI.GeneratedMSBuildEditorConfig.editorconfig
+C:\HjemmeKode\C-Sharp\C-Sharp\MøtePlanleggerClI\obj\Debug\net8.0\MøtePlanleggerClI.AssemblyInfoInputs.cache
+C:\HjemmeKode\C-Sharp\C-Sharp\MøtePlanleggerClI\obj\Debug\net8.0\MøtePlanleggerClI.AssemblyInfo.cs
+C:\HjemmeKode\C-Sharp\C-Sharp\MøtePlanleggerClI\obj\Debug\net8.0\MøtePlanleggerClI.csproj.CoreCompileInputs.cache
+C:\HjemmeKode\C-Sharp\C-Sharp\MøtePlanleggerClI\obj\Debug\net8.0\MøtePlanleggerClI.sourcelink.json
+C:\HjemmeKode\C-Sharp\C-Sharp\MøtePlanleggerClI\bin\Debug\net8.0\MøtePlanleggerClI.exe
+C:\HjemmeKode\C-Sharp\C-Sharp\MøtePlanleggerClI\bin\Debug\net8.0\MøtePlanleggerClI.deps.json
+C:\HjemmeKode\C-Sharp\C-Sharp\MøtePlanleggerClI\bin\Debug\net8.0\MøtePlanleggerClI.runtimeconfig.json
+C:\HjemmeKode\C-Sharp\C-Sharp\MøtePlanleggerClI\bin\Debug\net8.0\MøtePlanleggerClI.dll
+C:\HjemmeKode\C-Sharp\C-Sharp\MøtePlanleggerClI\bin\Debug\net8.0\MøtePlanleggerClI.pdb
+C:\HjemmeKode\C-Sharp\C-Sharp\MøtePlanleggerClI\obj\Debug\net8.0\MøtePlanleggerClI.dll
+C:\HjemmeKode\C-Sharp\C-Sharp\MøtePlanleggerClI\obj\Debug\net8.0\refint\MøtePlanleggerClI.dll
+C:\HjemmeKode\C-Sharp\C-Sharp\MøtePlanleggerClI\obj\Debug\net8.0\MøtePlanleggerClI.pdb
+C:\HjemmeKode\C-Sharp\C-Sharp\MøtePlanleggerClI\obj\Debug\net8.0\MøtePlanleggerClI.genruntimeconfig.cache
+C:\HjemmeKode\C-Sharp\C-Sharp\MøtePlanleggerClI\obj\Debug\net8.0\ref\MøtePlanleggerClI.dll
