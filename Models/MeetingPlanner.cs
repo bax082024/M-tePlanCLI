@@ -17,8 +17,21 @@ public class MeetingPlanner
     using (var context = new MeetingContext())
     {
       var meetings = context.Meetings
-          .Include(m => m.Persons)
-          .ToList();
-    }
+        .Include(m => m.Persons)
+        .ToList();
+
+      foreach (var meeting in meetings)
+      {
+        Console.WriteLine($"Meeting: {meeting.Title} at {meeting.Time}");
+        Console.WriteLine("Participants: ");
+        foreach (var person in meeting.Persons)
+        {
+          Console.WriteLine($"- {person.Name}");
+        }
+        Console.WriteLine();
+      }
+
+    } 
+
   }
 }
