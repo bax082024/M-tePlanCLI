@@ -8,35 +8,24 @@ class Program
   static void Main(string[] args)
   {
     MeetingPlanner planner = new MeetingPlanner();
+
+    Console.WriteLine("Choose an option: ");
+    Console.WriteLine("1. Schedule a new meeting");
+    Console.WriteLine("2. Display all meetings");
+    var choice = Console.ReadLine();
     
-    Console.WriteLine("Enter meeting title");
-    string? title = Console.ReadLine();
-    title ??= "Untitled";
-
-    DateTime time;
-    Console.WriteLine("Enter Meeting date and time (yyyy-MM-dd HH:mm)");
-    while (!DateTime.TryParse(Console.ReadLine(), out time))
+    if (choice == "1")
     {
-      Console.WriteLine("Invalid format, try again");
-    }
-    
-    Meeting meeting = new Meeting(title, time);
+      Console.WriteLine("Enter meeting title: ");
+      string? title = Console.ReadLine();
 
-    int personCount;
-    Console.WriteLine("Enter how many people!");
-    while (!int.TryParse(Console.ReadLine(), out personCount) || personCount < 1)
-    {
-      Console.WriteLine("Invalid number! try again.");
+      Console.WriteLine("Enter Meeting date and time (yyyy-MM-dd HH:mm)");
+      DateTime time;
+      while (!DateTime.TryParse(Console.ReadLine(), out time))
+      {
+        Console.WriteLine("Invalid format, please try again");
+      }
     }
-
-    for (int i = 0; i < personCount; i++)
-    {
-      Console.Write($"Enter Person`s name {i + 1}: ");
-      string? personName = Console.ReadLine();
-      personName ??= $"Person_{i + 1}";
-      meeting.AddPerson(new Person(personName));
-    }
-    planner.ScheduleMeeting(meeting);
       
       
   }
