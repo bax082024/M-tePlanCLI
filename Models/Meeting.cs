@@ -2,6 +2,7 @@ using System.Text.Json;
 using MøtePlanleggerClI.Models;
 public class Meeting
 {
+  public int Id { get; set; }
   public string? Title { get; set; }
   public DateTime Time { get; set; }
   public List<Person> Persons { get; private set;}
