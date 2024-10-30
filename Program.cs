@@ -25,6 +25,24 @@ class Program
       {
         Console.WriteLine("Invalid format, please try again");
       }
+
+      Meeting meeting = new Meeting(title, time);
+
+      Console.WriteLine("Enter how many people?: ");
+      int personCount;
+      while (int.TryParse(Console.ReadLine(), out personCount) || personCount < 1)
+      {
+        Console.WriteLine("Invalid Number. Please try again");
+      }
+
+      for (int i = 0; i < personCount; i++)
+      {
+        Console.Write($"Enter Person`s name {i + 1}");
+        string? personName = Console.ReadLine() ?? $"Person_{i + 1}";
+        meeting.AddPerson(new Person(personName));
+      }
+
+      planner.ScheduleMeeting(meeting);
     }
       
       
