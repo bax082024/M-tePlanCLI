@@ -17,7 +17,7 @@ class Program
     if (choice == "1")
     {
       Console.WriteLine("Enter meeting title: ");
-      string? title = Console.ReadLine();
+      string? title = Console.ReadLine() ?? "Untitled";
 
       Console.WriteLine("Enter Meeting date and time (yyyy-MM-dd HH:mm)");
       DateTime time;
@@ -30,19 +30,27 @@ class Program
 
       Console.WriteLine("Enter how many people?: ");
       int personCount;
-      while (int.TryParse(Console.ReadLine(), out personCount) || personCount < 1)
+      while (!int.TryParse(Console.ReadLine(), out personCount) || personCount < 1)
       {
         Console.WriteLine("Invalid Number. Please try again");
       }
 
       for (int i = 0; i < personCount; i++)
       {
-        Console.Write($"Enter Person`s name {i + 1}");
+        Console.Write($"Enter Person`s name {i + 1}: ");
         string? personName = Console.ReadLine() ?? $"Person_{i + 1}";
         meeting.AddPerson(new Person(personName));
       }
 
       planner.ScheduleMeeting(meeting);
+    }
+    else if (choice == "2")
+    {
+      planner.DisplayMeetings();
+    }
+    else
+    {
+      Console.WriteLine("Invalid choice");
     }
       
       
