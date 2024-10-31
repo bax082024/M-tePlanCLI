@@ -6,4 +6,4 @@
 - Bruker SQL server.
 
 
-[MasterPlan](MasterPlan\MøteplanleggerCLI.png)
+![MasterPlan](MasterPlan/MøteplanleggerCLI.png)
